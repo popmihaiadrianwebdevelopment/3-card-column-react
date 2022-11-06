@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size:15px;
+}
+
+body {
+    /* background-color: #EDDBC0; */
+    background-image: url(https://img.freepik.com/free-photo/black-sport-car-highway-drive-sunset_114579-5064.jpg?w=1380&t=st=1667747908~exp=1667748508~hmac=20c4d165b46b65f3c4dbf051656a6759d8a4d9e20c631c9111792eac60ece7e9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    width: 100px;
+}
+
+.card {
+    backdrop-filter: blur(.2rem) saturate(100%);
+  -webkit-backdrop-filter: blur(.2rem) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.2);
+    width: 300px;
+    height:500px;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card img {
+    margin: 2rem 0;
+}
+
+.card h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight:700;
+    color: hsl(0, 0%, 95%);
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.card .description {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 2rem 0;
+    line-height: 1.5;
+    width: 80%;
+    text-align: justify;
+    width: 250px;
+}
+
+.card button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    width: 150px;
+    padding: 1.25rem;
+    border-radius: 3rem;
+    font-family: inherit;
+    transition: .7s all;
+}
+
+.card button:hover {
+    background-color: transparent;
+    border: 1px solid #f4f4f4f4;
+    color:#fff;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex:not(:last-child) {
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .flex {
+        padding: 1.25;
+        display: flex;
+        flex-direction: column;
+    }
+    .flex:not(:last-child) {
+        margin-right: 0rem;
+    }
+}
